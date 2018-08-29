@@ -1,47 +1,46 @@
-#OS junk files
-[Tt]humbs.db
-*.DS_Store
+*.iml
+.gradle
+/local.properties
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+#built application files
+*.apk
+*.ap_
 
-#Visual Studio files
-*.[Oo]bj
-*.user
-*.aps
-*.pch
-*.vspscc
-*.vssscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.tlb
-*.tlh
-*.bak
-*.[Cc]ache
-*.ilk
-*.log
-*.lib
-*.sbr
-*.sdf
-*.sln
-*.csproj
-*.vs/
-ipch/
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Windows thumbnail db
+Thumbs.db
+
+# OSX files
+.DS_Store
+
+# Android Studio
+*.iml
+.idea
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+build/
+.navigation
+captures/
+output.json
+
+#NDK
 obj/
-[Bb]in
-[Dd]ebug*/
-[Rr]elease*/
-Ankh.NoLoad
-
-#Tooling
-_ReSharper*/
-*.resharper
-[Tt]est[Rr]esult*
-
-#Project files
-[Bb]uild/
-
-#Subversion files
-.svn
-
-# Office Temp Files
-~$*
+.externalNativeBuild
