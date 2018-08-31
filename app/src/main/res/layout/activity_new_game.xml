@@ -20,14 +20,6 @@
         android:inputType="textPersonName"
         android:text="Name" />
 
-    <Button
-        android:id="@+id/buttonAbout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="32dp"
-        android:text="@string/submit" />
 
 
     <RadioGroup
@@ -73,22 +65,133 @@
         android:textSize="20sp" />
 
     <Button
-        android:id="@+id/increase"
+        android:id="@+id/strIncrease"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       android:layout_toRightOf="@+id/decrease"
+       android:layout_toRightOf="@+id/strDecrease"
         android:layout_centerVertical="true"
-        android:onClick="increaseInteger"
+        android:onClick="increaseStr"
         android:text="+" />
 
     <Button
-        android:id="@+id/decrease"
+        android:id="@+id/strDecrease"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/strength"
         android:layout_marginLeft="20dp"
         android:layout_centerVertical="true"
-        android:onClick="decreaseInteger"
+        android:onClick="decreaseStr"
         android:text="-" />
+
+    <TextView
+        android:id="@+id/intellect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nameText"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_below="@+id/strength"
+        android:layout_centerVertical="true"
+        android:text="Intellect: 0"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/intIncrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/strDecrease"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/strIncrease"
+        android:onClick="increaseInt"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/intDecrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/strength"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/strDecrease"
+        android:onClick="decreaseInt"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/charisma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nameText"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_below="@+id/intellect"
+        android:layout_centerVertical="true"
+        android:text="Charisma: 0"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/charIncrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/intDecrease"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/intIncrease"
+        android:onClick="increaseChar"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/charDecrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/strength"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/intDecrease"
+        android:onClick="decreaseChar"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/skill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nameText"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_below="@+id/charisma"
+        android:layout_centerVertical="true"
+        android:text="Skill: 0"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/skillIncrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/intDecrease"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/charIncrease"
+        android:onClick="increaseSkill"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/skillDecrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/strength"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/charDecrease"
+        android:onClick="decreaseSkill"
+        android:text="-" />
+
+
+
+    <Button
+        android:id="@+id/buttonAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/skill"
+        android:layout_marginTop="20dp"
+        android:onClick="submit"
+        android:text="@string/submit" />
 
 </RelativeLayout>
