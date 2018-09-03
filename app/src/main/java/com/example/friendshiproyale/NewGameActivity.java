@@ -6,9 +6,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class NewGameActivity extends AppCompatActivity {
+    String name;
+    boolean gender;
     int str=0;
     int itt=0;
     int chr=0;
@@ -78,11 +83,22 @@ public class NewGameActivity extends AppCompatActivity {
 
     }
 
+    public void updateGender(View view){
+        boolean isMaleChecked = ((RadioButton) findViewById(R.id.radioMale)).isChecked();
+        boolean isFemaleChecked = ((RadioButton) findViewById(R.id.radioFemale)).isChecked();
+
+        if (isMaleChecked){
+            gender = true;
+        }else if (isFemaleChecked) {
+            gender = false;
+        }
+    }
+
     public void submit(View v) {
+        name = ((TextView) findViewById(R.id.nameText)).getText().toString();
+        PlayerManager.createPlayer(name, gender, str, itt, chr, skl);
 
-
-
-        //game loop activity
-        startActivity(new Intent(this, NewGameActivity.class));
+        //game NPC creation
+        startActivity(new Intent(this, NPCCreationActivity.class));
     }
 }
