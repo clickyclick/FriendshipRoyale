@@ -8,12 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class NewGameActivity extends AppCompatActivity {
-    String name;
-    boolean gender;
+    boolean gender=true;
     int str=0;
     int itt=0;
     int chr=0;
@@ -23,6 +23,10 @@ public class NewGameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_game);
+
+        //name validation
+        EditText nameText= findViewById(R.id.nameText);
+        nameText.addTextChangedListener(new TextValidation(nameText));
     }
 
     /**TODO make this work for all 5 stats, not go negative and only can use as many skill points as you own
@@ -95,10 +99,19 @@ public class NewGameActivity extends AppCompatActivity {
     }
 
     public void submit(View v) {
-        name = ((TextView) findViewById(R.id.nameText)).getText().toString();
-        PlayerManager.createPlayer(name, gender, str, itt, chr, skl);
+        EditText nameText= findViewById(R.id.nameText);
+        String name =  nameText.getText().toString();
 
-        //game NPC creation
-        startActivity(new Intent(this, NPCCreationActivity.class));
+        //check name is not null
+        if (name.length() == 0) {
+            nameText.setError("Please enter a name");
+        }
+
+        //check if name field has errors
+        if (nameText.getError()==null) {
+            PlayerManager.createPlayer(name, gender, str, itt, chr, skl);
+            //game NPC creation
+            startActivity(new Intent(this, NPCCreationActivity.class));
+        }
     }
 }
