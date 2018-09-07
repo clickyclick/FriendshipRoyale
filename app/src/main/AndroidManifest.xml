@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -19,9 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewGameActivity" />
-        <activity android:name=".IslandActivity" />
-        <activity android:name=".NPCCreationActivity"></activity>
+        <activity android:name=".activities.NewGameActivity" />
+        <activity android:name=".activities.IslandActivity" />
+        <activity android:name=".activities.NPCCreationActivity"></activity>
     </application>
 
 </manifest>

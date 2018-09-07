@@ -6,12 +6,13 @@ public class NPCManager {
     private static Vector<NPC> npcs;
 
 
-    private static void createNPC(){
-        //useless
+    public static void init(){
+        npcs =new Vector<>();
     }
 
     public static void addNPC(String name){
-        npcs.add(createNPC(name));
+        NPC npc= createNPC(name);
+        npcs.add(npc);
     }
 
     public static Vector<NPC> getNPCs(){

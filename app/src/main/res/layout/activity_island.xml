@@ -12,11 +12,56 @@
 
     <ImageView
         android:id="@+id/player"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:background="@drawable/player"
-        app:srcCompat="@drawable/border" />
+        android:src="@drawable/player"
+        android:contentDescription="player"
+       />
+
+    <TextView
+        android:id="@+id/diag"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_below="@+id/player"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/weapon1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/diag"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <ImageButton
+        android:id="@+id/weapon2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/diag"
+        android:layout_toRightOf="@+id/weapon1"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:layout_toEndOf="@+id/weapon1" />
+
+    <ImageButton
+        android:id="@+id/weapon3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/diag"
+        android:layout_toLeftOf="@id/weapon1"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:layout_toStartOf="@id/weapon1" />
+
+    <Button
+        android:id="@+id/cont"
+        android:text="@string/cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weapon1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>

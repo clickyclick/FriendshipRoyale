@@ -5,7 +5,7 @@ import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.TextView;
 
-
+//TODO this class is not modular, add variables for limits and such
 public class TextValidation implements TextWatcher {
         private final TextView textView;
 

@@ -1,4 +1,4 @@
-package com.example.friendshiproyale;
+package com.example.friendshiproyale.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.friendshiproyale.NPCManager;
+import com.example.friendshiproyale.R;
+import com.example.friendshiproyale.TextValidation;
 
 public class NPCCreationActivity extends AppCompatActivity {
 
@@ -47,7 +51,8 @@ public class NPCCreationActivity extends AppCompatActivity {
         }
 
 
-        if (!(npc1.getError()==null || npc2.getError()==null || npc3.getError()==null || npc4.getError()==null)) {
+        if (npc1.getError()==null && npc2.getError()==null && npc3.getError()==null && npc4.getError()==null) {
+            NPCManager.init();
             NPCManager.addNPC(npc1.getText().toString());
             NPCManager.addNPC(npc2.getText().toString());
             NPCManager.addNPC(npc3.getText().toString());

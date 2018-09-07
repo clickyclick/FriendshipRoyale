@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="beach_landing">You wake up face down in sand, everything is a bit blurry. There is
+    something in your bag, which weapon did you choose again?</string>
+    <string name="tree_landing">You wake up hanging in the canopy of some trees, everything is a bit blurry. There is
+    something in your bag, which weapon did you choose again?</string>
+    <string name="cave_landing">You wake up at the mouth of a deep cave, everything is a bit blurry. There is
+    something in your bag, which weapon did you choose again?</string>
+</resources>
