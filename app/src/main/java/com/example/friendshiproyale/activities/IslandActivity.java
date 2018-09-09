@@ -1,9 +1,12 @@
 package com.example.friendshiproyale.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
+import com.example.friendshiproyale.Inventory;
 import com.example.friendshiproyale.R;
 
 public class IslandActivity extends AppCompatActivity {
@@ -16,5 +19,10 @@ public class IslandActivity extends AppCompatActivity {
         TextView dialogue= findViewById(R.id.diag);
 
         dialogue.setText(getString(R.string.beach_landing));
+    }
+
+
+    public void inventoryScreen(View view){
+        startActivity(new Intent(this, InventoryActivity.class));
     }
 }

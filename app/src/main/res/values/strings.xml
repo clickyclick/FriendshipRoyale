@@ -5,4 +5,14 @@
     <string name="about">About</string>
     <string name="submit">Submit</string>
     <string name="cont">Continue</string>
+    <string name="inventoryName">%1$s\'s Inventory</string>
+    <string name="inventory">Inventory</string>
+    <string name="name">Name</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="assign_your_stats_below">Assign your stats below</string>
+    <string name="strength_0">Strength: 0</string>
+    <string name="intellect_0">Intellect: 0</string>
+    <string name="charisma_0">Charisma: 0</string>
+    <string name="skill_0">Skill: 0</string>
 </resources>

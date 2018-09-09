@@ -17,6 +17,10 @@ public abstract class Human {
         this.skill=skill;
     }
 
+    public String getName(){
+        return name;
+    }
+
 
 
 }

@@ -18,7 +18,7 @@
         android:layout_marginTop="26dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:text="@string/name" />
 
 
 
@@ -37,7 +37,7 @@
             android:layout_weight="1"
             android:checked="true"
             android:onClick="updateGender"
-        android:text="Male" />
+        android:text="@string/male" />
 
         <RadioButton
             android:id="@+id/radioFemale"
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="updateGender"
-            android:text="Female" />
+            android:text="@string/female" />
     </RadioGroup>
 
 
@@ -55,7 +55,7 @@
         android:layout_below="@+id/radio"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:text="Assign your stats below" />
+        android:text="@string/assign_your_stats_below" />
 
     <TextView
         android:id="@+id/strength"
@@ -64,7 +64,7 @@
         android:layout_alignStart="@+id/nameText"
         android:layout_alignLeft="@+id/nameText"
         android:layout_centerVertical="true"
-        android:text="Strength: 0"
+        android:text="@string/strength_0"
         android:textSize="20sp" />
 
     <Button
@@ -74,7 +74,8 @@
        android:layout_toRightOf="@+id/strDecrease"
         android:layout_centerVertical="true"
         android:onClick="increaseStr"
-        android:text="+" />
+        android:text="+"
+        android:layout_toEndOf="@+id/strDecrease" />
 
     <Button
         android:id="@+id/strDecrease"
@@ -84,7 +85,9 @@
         android:layout_marginLeft="20dp"
         android:layout_centerVertical="true"
         android:onClick="decreaseStr"
-        android:text="-" />
+        android:text="-"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/strength" />
 
     <TextView
         android:id="@+id/intellect"
@@ -94,7 +97,7 @@
         android:layout_alignLeft="@+id/nameText"
         android:layout_below="@+id/strength"
         android:layout_centerVertical="true"
-        android:text="Intellect: 0"
+        android:text="@string/intellect_0"
         android:layout_marginTop="20dp"
         android:textSize="20sp" />
 
@@ -106,7 +109,8 @@
         android:layout_centerVertical="true"
         android:layout_below="@+id/strIncrease"
         android:onClick="increaseInt"
-        android:text="+" />
+        android:text="+"
+        android:layout_toEndOf="@+id/strDecrease" />
 
     <Button
         android:id="@+id/intDecrease"
@@ -117,7 +121,9 @@
         android:layout_centerVertical="true"
         android:layout_below="@+id/strDecrease"
         android:onClick="decreaseInt"
-        android:text="-" />
+        android:text="-"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/strength" />
 
     <TextView
         android:id="@+id/charisma"
@@ -127,7 +133,7 @@
         android:layout_alignLeft="@+id/nameText"
         android:layout_below="@+id/intellect"
         android:layout_centerVertical="true"
-        android:text="Charisma: 0"
+        android:text="@string/charisma_0"
         android:layout_marginTop="20dp"
         android:textSize="20sp" />
 
@@ -139,7 +145,8 @@
         android:layout_centerVertical="true"
         android:layout_below="@+id/intIncrease"
         android:onClick="increaseChar"
-        android:text="+" />
+        android:text="+"
+        android:layout_toEndOf="@+id/intDecrease" />
 
     <Button
         android:id="@+id/charDecrease"
@@ -150,7 +157,9 @@
         android:layout_centerVertical="true"
         android:layout_below="@+id/intDecrease"
         android:onClick="decreaseChar"
-        android:text="-" />
+        android:text="-"
+        android:layout_toEndOf="@+id/strength"
+        android:layout_marginStart="20dp" />
 
     <TextView
         android:id="@+id/skill"
@@ -160,7 +169,7 @@
         android:layout_alignLeft="@+id/nameText"
         android:layout_below="@+id/charisma"
         android:layout_centerVertical="true"
-        android:text="Skill: 0"
+        android:text="@string/skill_0"
         android:layout_marginTop="20dp"
         android:textSize="20sp" />
 
@@ -172,7 +181,8 @@
         android:layout_centerVertical="true"
         android:layout_below="@+id/charIncrease"
         android:onClick="increaseSkill"
-        android:text="+" />
+        android:text="+"
+        android:layout_toEndOf="@+id/intDecrease" />
 
     <Button
         android:id="@+id/skillDecrease"
@@ -183,7 +193,9 @@
         android:layout_centerVertical="true"
         android:layout_below="@+id/charDecrease"
         android:onClick="decreaseSkill"
-        android:text="-" />
+        android:text="-"
+        android:layout_toEndOf="@+id/strength"
+        android:layout_marginStart="20dp" />
 
 
 
