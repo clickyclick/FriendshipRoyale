@@ -1,5 +1,7 @@
 package com.example.friendshiproyale;
 
+import com.example.friendshiproyale.items.Item;
+
 public class Player extends Human {
     private Inventory inventory;
 

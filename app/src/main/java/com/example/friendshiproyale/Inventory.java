@@ -1,5 +1,7 @@
 package com.example.friendshiproyale;
 
+import com.example.friendshiproyale.items.Item;
+
 import java.util.Vector;
 
 public class Inventory {
