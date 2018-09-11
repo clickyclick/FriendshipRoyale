@@ -1,7 +1,9 @@
 package com.example.friendshiproyale.weapons;
+import android.graphics.drawable.Drawable;
 
 
-public abstract class MeleeWeapon {
+
+public abstract class MeleeWeapon extends Weapon {
     protected int range;
     protected int speed;
     protected int damage;
@@ -9,8 +11,10 @@ public abstract class MeleeWeapon {
     protected int skillReq;
     protected int strengthReq;
 
+
     public int attack(){
         //filler
         return 0;
     }
+
 }

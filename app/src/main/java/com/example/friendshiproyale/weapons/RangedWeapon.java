@@ -1,7 +1,7 @@
 package com.example.friendshiproyale.weapons;
 
 
-public abstract class RangedWeapon {
+public abstract class RangedWeapon extends Weapon {
     protected int range;
     protected int decibals;
     protected int damage;

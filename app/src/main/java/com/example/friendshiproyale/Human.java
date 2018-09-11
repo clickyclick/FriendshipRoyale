@@ -8,6 +8,26 @@ public abstract class Human {
     private int charisma;
     private int skill;
 
+    public boolean isGender() {
+        return gender;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public int getIntellect() {
+        return intellect;
+    }
+
+    public int getCharisma() {
+        return charisma;
+    }
+
+    public int getSkill() {
+        return skill;
+    }
+
     Human(String name, boolean gender, int strength, int intellect, int charisma, int skill){
         this.name=name;
         this.gender=gender;

@@ -1,8 +1,12 @@
 package com.example.friendshiproyale.weapons;
 
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+
 public class Colt extends RangedWeapon {
 
-    Colt() {
+    public Colt(Drawable icon) {
+        this.icon=icon;
         range = 200;
         decibals = 200;
         damage = 50;

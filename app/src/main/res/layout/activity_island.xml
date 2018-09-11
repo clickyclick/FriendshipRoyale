@@ -47,34 +47,34 @@
 
         <RadioButton
             android:id="@+id/weapon1"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:background="@drawable/choicebackground"
             android:button="@android:color/transparent"
             android:checked="true"
             android:layout_margin="10dp"
-            android:text="RadioButton1" />
+             />
 
         <RadioButton
             android:id="@+id/weapon2"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:background="@drawable/choicebackground"
             android:button="@android:color/transparent"
             android:checked="true"
             android:layout_margin="10dp"
-            android:text="RadioButton2"
              />
 
         <RadioButton
             android:id="@+id/weapon3"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:background="@drawable/choicebackground"
+
             android:button="@android:color/transparent"
             android:checked="true"
             android:layout_margin="10dp"
-            android:text="RadioButton3" />
+             />
 
     </RadioGroup>
 
@@ -85,6 +85,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="28dp"
+        android:onClick="cont"
         android:text="@string/cont" />
 
 
