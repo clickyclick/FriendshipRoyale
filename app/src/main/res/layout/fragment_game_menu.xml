@@ -15,7 +15,7 @@
         android:id="@+id/inventory_button"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/border"
+        android:src="@drawable/backpack"
         android:scaleType="fitCenter"
         android:onClick="inventoryScreen"/>
 

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.friendshiproyale.GameManager;
 import com.example.friendshiproyale.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -17,6 +18,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //initialize stuff
+        GameManager.init();
 
         //getting the button
         buttonNewGame = (Button) findViewById(R.id.buttonNewGame);

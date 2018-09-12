@@ -26,6 +26,14 @@ public class InventoryActivity extends AppCompatActivity {
         nameText.setText(inventoryName);
 
         //sets the stats
+        TextView strengthText = (TextView) findViewById(R.id.strength);
+        strengthText.setText("Strength: " + PlayerManager.getPlayer().getStrength());
+        TextView intellectText = (TextView) findViewById(R.id.intellect);
+        intellectText.setText("Intellect: " + PlayerManager.getPlayer().getIntellect());
+        TextView charismaText = (TextView) findViewById(R.id.charisma);
+        charismaText.setText("Charisma: " + PlayerManager.getPlayer().getCharisma());
+        TextView skillText = (TextView) findViewById(R.id.skill);
+        skillText.setText("Skill: " + PlayerManager.getPlayer().getSkill());
 
 
         //sets the weapons
