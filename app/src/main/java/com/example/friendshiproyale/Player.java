@@ -11,6 +11,8 @@ public class Player extends Human {
     private Weapon weapon2;
 
 
+
+
     public Inventory getInventory() {
         return inventory;
     }
