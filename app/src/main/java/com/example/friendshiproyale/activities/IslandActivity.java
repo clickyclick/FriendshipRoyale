@@ -56,11 +56,6 @@ public class IslandActivity extends AppCompatActivity {
         RandomStartingWeapon.clear();
     }
 
-
-    public void inventoryScreen(View view){
-        startActivity(new Intent(this, InventoryActivity.class));
-    }
-
     public void cont(View view){
         if (weapon1Button.isChecked()){
             PlayerManager.pickupWeapon(weapon1);
