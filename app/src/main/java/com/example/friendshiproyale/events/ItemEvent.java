@@ -24,8 +24,11 @@ public class ItemEvent extends GameEvent {
     {
         for(int i = 0; i < weapon_count; i++)
         {
-            weapons.add(RandomStartingWeapon.generateWeapon(context.getResources()));
-            desired_weapons.add(false);
+            Weapon weapon = RandomStartingWeapon.generateWeapon(context.getResources());
+            if(weapon != null) {
+                weapons.add(weapon);
+                desired_weapons.add(false);
+            }
         }
     }
 

@@ -10,11 +10,15 @@ import java.util.Random;
 
 public class RandomStartingWeapon {
     private static List<Integer> list = new ArrayList<>();
+    private static int unique_weapons = 3;
 
     public static Weapon generateWeapon(Resources res){
+
+        if(list.size() >= unique_weapons) return null;
+
         Random rand = new Random();
         while(true) {
-            int n = rand.nextInt(3) + 1;
+            int n = rand.nextInt(unique_weapons) + 1;
 
             if (n==1 && !list.contains(1)){
                 list.add(1);
@@ -29,7 +33,6 @@ public class RandomStartingWeapon {
                 return new Bow(res.getDrawable(R.drawable.bow,null));
             }
         }
-
     }
 
     public static void clear() {

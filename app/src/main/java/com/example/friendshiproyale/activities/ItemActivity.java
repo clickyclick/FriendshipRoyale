@@ -45,9 +45,9 @@ public class ItemActivity extends AppCompatActivity {
 
     private void setWeapons(){
         //TODO randomize weapons that appear in buttons and set the images
-        int number = item_event.weapon_count;
 
         item_event.setWeapons();
+        int number = item_event.weapons.size();
 
         RadioGroup ll = findViewById(R.id.selection);
         for (int i = 1; i <= number; i++) {
@@ -68,7 +68,7 @@ public class ItemActivity extends AppCompatActivity {
 
 
             //Calculate appropriate size for buttons
-            if((2*margin_size + pixel_size)*item_event.weapon_count >= width )
+            if((2*margin_size + pixel_size)*item_event.weapons.size() >= width )
             {
                 // TODO: Resize item boxes when there are too many to fit on screen to prevent crashing
                 // Currently happens when there are 4 or more item boxes
