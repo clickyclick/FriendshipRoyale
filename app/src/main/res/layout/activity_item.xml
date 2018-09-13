@@ -42,36 +42,36 @@
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/weapon1"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/choicebackground"
-            android:button="@android:color/transparent"
-            android:checked="true"
-            android:layout_margin="10dp"
-             />
+        <!--<RadioButton-->
+            <!--android:id="@+id/weapon1"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:background="@drawable/choicebackground"-->
+            <!--android:button="@android:color/transparent"-->
+            <!--android:checked="true"-->
+            <!--android:layout_margin="10dp"-->
+             <!--/>-->
 
-        <RadioButton
-            android:id="@+id/weapon2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/choicebackground"
-            android:button="@android:color/transparent"
-            android:checked="true"
-            android:layout_margin="10dp"
-             />
+        <!--<RadioButton-->
+            <!--android:id="@+id/weapon2"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:background="@drawable/choicebackground"-->
+            <!--android:button="@android:color/transparent"-->
+            <!--android:checked="true"-->
+            <!--android:layout_margin="10dp"-->
+             <!--/>-->
 
-        <RadioButton
-            android:id="@+id/weapon3"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:background="@drawable/choicebackground"
+        <!--<RadioButton-->
+            <!--android:id="@+id/weapon3"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:background="@drawable/choicebackground"-->
 
-            android:button="@android:color/transparent"
-            android:checked="true"
-            android:layout_margin="10dp"
-             />
+            <!--android:button="@android:color/transparent"-->
+            <!--android:checked="true"-->
+            <!--android:layout_margin="10dp"-->
+             <!--/>-->
 
     </RadioGroup>
 

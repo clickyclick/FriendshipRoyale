@@ -59,7 +59,7 @@ public class NPCCreationActivity extends AppCompatActivity {
             NPCManager.addNPC(npc4.getText().toString());
 
             //game loop
-            startActivity(new Intent(this, IslandActivity.class));
+            startActivity(new Intent(this, ItemActivity.class));
         }
     }
 }
