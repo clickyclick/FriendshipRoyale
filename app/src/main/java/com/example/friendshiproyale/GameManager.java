@@ -13,7 +13,7 @@ public class GameManager {
 
     private static Location currentLocation;
     private static List<Location> locations;
-    private int time = 0;
+    private static int time = 0;
 
     public static void init(){
         initLocations();
