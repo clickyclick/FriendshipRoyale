@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="unarmedCalmEnemy">You see %1$s walking in the distance. %1$s does not appear to be armed, and is calm and composed.</string>
+    <string name="armedAgitatedEnemy">You see %1$s walking in the distance. %1$s is armed with a firearm and something seems to have made him jumpy.</string>
+    <string name="unknownNoise">You can hear someone, you cannot tell who it is but they are within in a few metres and you can pinpoint their direction</string>
+</resources>

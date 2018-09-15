@@ -1,5 +1,11 @@
 package com.example.friendshiproyale;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+
+import com.example.friendshiproyale.activities.DiscoverEnemyActivity;
+import com.example.friendshiproyale.activities.NewGameActivity;
 import com.example.friendshiproyale.location.Beach;
 import com.example.friendshiproyale.location.Cavemouth;
 import com.example.friendshiproyale.location.Cliff;
@@ -8,6 +14,8 @@ import com.example.friendshiproyale.location.Location;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static android.support.v4.content.ContextCompat.startActivity;
 
 public class GameManager {
 
@@ -58,6 +66,27 @@ public class GameManager {
 
     public static void setCurrentLocation(Location loc) {
        currentLocation = loc;
+    }
+
+    public static void gameLoop(Activity context){
+
+        while(PlayerManager.isAlive() && NPCManager.areAlive()){
+
+
+            //start random activity
+
+            randomActivity();
+            context.startActivity(new Intent(context, DiscoverEnemyActivity.class));
+            //increment time after each event
+            incrementTime();
+            break;
+        }
+
+
+    }
+
+    private static void randomActivity(){
+
     }
 
 

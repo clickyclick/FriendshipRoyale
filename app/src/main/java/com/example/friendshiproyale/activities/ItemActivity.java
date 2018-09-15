@@ -1,5 +1,6 @@
 package com.example.friendshiproyale.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
@@ -11,11 +12,14 @@ import android.widget.TextView;
 import android.util.DisplayMetrics;
 
 
+import com.example.friendshiproyale.GameManager;
 import com.example.friendshiproyale.R;
 import com.example.friendshiproyale.events.ItemEvent;
 import com.example.friendshiproyale.weapons.RandomStartingWeapon;
 
 import java.util.ArrayList;
+
+import static android.support.v4.content.ContextCompat.startActivity;
 
 public class ItemActivity extends AppCompatActivity {
 
@@ -100,7 +104,10 @@ public class ItemActivity extends AppCompatActivity {
                 item_event.desired_weapons.set(i,true);
             }
         }
+        System.out.println("OKAYGAY");
 
         item_event.cont();
+        //starts the game loop, if we want this to be modular we will have to move later
+        GameManager.gameLoop(this);
     }
 }

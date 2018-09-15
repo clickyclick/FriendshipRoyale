@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <fragment
+        android:name="com.example.friendshiproyale.activities.GameMenuFragment"
+        android:id="@+id/game_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/player"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/player"
+        android:contentDescription="player"
+        />
+
+    <TextView
+        android:id="@+id/diag"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_below="@+id/player"
+        android:layout_marginTop="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/selection"
+        android:layout_below="@+id/diag"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/choiceAttack"
+            android:layout_width="80sp"
+            android:layout_height="40sp"
+            android:background="@drawable/choicebackground"
+            android:button="@android:color/transparent"
+            android:text="@string/attack"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:onClick="attack"/>
+
+        <Button
+            android:id="@+id/choiceParley"
+            android:layout_width="80sp"
+            android:layout_height="40sp"
+            android:background="@drawable/choicebackground"
+            android:button="@android:color/transparent"
+            android:text="@string/parley"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:onClick="parley"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/choiceHide"
+            android:layout_width="80sp"
+            android:layout_height="40sp"
+            android:background="@drawable/choicebackground"
+            android:button="@android:color/transparent"
+            android:text="@string/hide"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:onClick="hide"/>
+
+        <Button
+            android:id="@+id/choiceItem"
+            android:layout_width="80sp"
+            android:layout_height="40sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/choicebackground"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/item"
+            android:onClick="item"/>
+
+        </LinearLayout>
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/weapon1"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:background="@drawable/choicebackground"-->
+        <!--android:button="@android:color/transparent"-->
+        <!--android:checked="true"-->
+        <!--android:layout_margin="10dp"-->
+        <!--/>-->
+
+    </RadioGroup>
+
+    <!--<Button-->
+        <!--android:id="@+id/cont"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="28dp"-->
+        <!--android:onClick="cont"-->
+        <!--android:text="@string/cont" />-->
+
+
+</RelativeLayout>

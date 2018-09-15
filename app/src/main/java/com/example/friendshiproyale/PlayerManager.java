@@ -35,5 +35,9 @@ public class PlayerManager {
         return player.getWeapon2();
     }
 
+    public static boolean isAlive(){
+        return player.isAlive();
+    }
+
 
 }

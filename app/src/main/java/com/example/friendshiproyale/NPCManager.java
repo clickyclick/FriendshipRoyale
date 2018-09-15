@@ -29,4 +29,14 @@ public class NPCManager {
         return npc;
     }
 
+    public static boolean areAlive(){
+        boolean temp=false;
+        for (int i=0; i < npcs.size(); i++){
+            if (npcs.get(i).isAlive()){
+                temp=true;
+            }
+        }
+        return temp;
+    }
+
 }

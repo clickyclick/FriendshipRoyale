@@ -7,6 +7,7 @@ public abstract class Human {
     private int intellect;
     private int charisma;
     private int skill;
+    private int health=10;
 
     public boolean isGender() {
         return gender;
@@ -41,6 +42,17 @@ public abstract class Human {
         return name;
     }
 
+    public void incHealth(int val){
+        health= health + val;
+    }
+
+    public void decHealth(int val){
+        health= health - val;
+    }
+
+    public boolean isAlive(){
+        return health > 0;
+    }
 
 
 }

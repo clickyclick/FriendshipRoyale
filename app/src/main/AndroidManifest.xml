@@ -22,7 +22,8 @@
         <activity android:name=".activities.NewGameActivity" />
         <activity android:name=".activities.ItemActivity" />
         <activity android:name=".activities.NPCCreationActivity" />
-        <activity android:name=".activities.InventoryActivity"></activity>
+        <activity android:name=".activities.InventoryActivity" />
+        <activity android:name=".activities.DiscoverEnemyActivity"></activity>
     </application>
 
 </manifest>
