@@ -2,19 +2,15 @@ package com.example.friendshiproyale.items;
 
 import android.graphics.drawable.Drawable;
 
-public abstract class Item {
-    private int uses;
+public abstract class Item{
+
     private Drawable icon;
 
-    Item(int uses, Drawable icon){
-        this.uses= uses;
+    public Item(Drawable icon){
         this.icon=icon;
     }
 
-    public void reduceUses(){
-        uses= uses - 1;
+    public Drawable getIcon() {
+        return icon;
     }
-
-    public int getUses(){ return uses;}
-
 }

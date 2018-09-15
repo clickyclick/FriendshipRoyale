@@ -11,6 +11,9 @@ public abstract class MeleeWeapon extends Weapon {
     protected int skillReq;
     protected int strengthReq;
 
+    MeleeWeapon(Drawable icon){
+        super(icon);
+    }
 
     public int attack(){
         //filler

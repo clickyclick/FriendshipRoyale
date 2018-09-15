@@ -6,7 +6,7 @@ public class Bow extends RangedWeapon {
     //ImageView= new
 
     public Bow(Drawable icon){
-        this.icon=icon;
+        super(icon);
         range=200;
         decibels =20;
         damage=40;

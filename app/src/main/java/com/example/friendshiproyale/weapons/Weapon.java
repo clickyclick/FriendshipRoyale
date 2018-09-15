@@ -1,13 +1,11 @@
 package com.example.friendshiproyale.weapons;
 
 import android.graphics.drawable.Drawable;
+import com.example.friendshiproyale.items.Item;
 
-public abstract class Weapon {
+public abstract class Weapon extends Item {
 
-    protected Drawable icon;
-
-
-    public Drawable getIcon() {
-        return icon;
+    Weapon(Drawable icon){
+        super(icon);
     }
 }

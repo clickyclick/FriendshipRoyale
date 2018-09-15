@@ -7,7 +7,7 @@ public class KitchenKnife extends MeleeWeapon {
 
 
     public KitchenKnife(Drawable icon){
-        this.icon=icon;
+        super(icon);
         range=10;
         damage=30;
         material="METAL";

@@ -1,8 +1,6 @@
 package com.example.friendshiproyale;
 
 import com.example.friendshiproyale.items.Item;
-import com.example.friendshiproyale.weapons.MeleeWeapon;
-import com.example.friendshiproyale.weapons.RangedWeapon;
 import com.example.friendshiproyale.weapons.Weapon;
 
 public class Player extends Human {

@@ -2,7 +2,7 @@ package com.example.friendshiproyale.items;
 
 import android.graphics.drawable.Drawable;
 
-public class Bandages extends Item {
+public class Bandages extends ConsumableItem {
 
 
     Bandages(Drawable icon){
