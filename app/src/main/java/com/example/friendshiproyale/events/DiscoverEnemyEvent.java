@@ -32,6 +32,7 @@ public class DiscoverEnemyEvent extends GameEvent {
 
     }
 
+
     public void cont(){
 
     }

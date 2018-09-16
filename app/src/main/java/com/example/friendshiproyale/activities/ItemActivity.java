@@ -104,7 +104,6 @@ public class ItemActivity extends AppCompatActivity {
                 item_event.desired_weapons.set(i,true);
             }
         }
-        System.out.println("OKAYGAY");
 
         item_event.cont();
         //starts the game loop, if we want this to be modular we will have to move later

@@ -32,6 +32,7 @@ public class ItemEvent extends GameEvent {
         }
     }
 
+    //@SCURTU IS THIS EVEN CALLED?
     public void cont(){
         for(int i = 0; i < weapons.size(); i++)
         {
