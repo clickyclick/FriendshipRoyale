@@ -13,10 +13,10 @@ Next steps: Combat, dropping and using items, location movement, actually ending
 
 ## Screenshots of development so far
 
-![Alt text](/screenshots/screenshot1.jpg?raw=true "Build your survivor")
-![Alt text](/screenshots/screenshot2.jpg?raw=true "Land on the island")
-![Alt text](/screenshots/screenshot3.jpg?raw=true "Make choices at every encounter")
-![Alt text](/screenshots/screenshot4.jpg?raw=true "Inventory is WIP")
+![Alt text](/screenshots/screenshot1.png?raw=true "Build your survivor")
+![Alt text](/screenshots/screenshot2.png?raw=true "Land on the island")
+![Alt text](/screenshots/screenshot3.png?raw=true "Make choices at every encounter")
+![Alt text](/screenshots/screenshot4.png?raw=true "Inventory is WIP")
 
 ## Versioning
 
@@ -25,7 +25,8 @@ Commits take the form vX.X/commit text based on the version. We are currently on
 ## Authors
 
 * **Aidan Wilson** - *Lead Designer* - [clickyclick](https://github.com/clickyclick)
-* **Victor Scurtu** - *Code Review and Refactor* - [clickyclick](https://github.com/clickyclick)
+* **Victor Scurtu** - *Code Review and Refactor* - [23scurtu](https://github.com/23scurtu)
+* **Macauley Macdowell** - *Inventory UI* - [DoubleMac](https://github.com/DoubleMac)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
