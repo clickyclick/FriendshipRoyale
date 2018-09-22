@@ -28,7 +28,6 @@ Commits take the form vX.X/commit text based on the version. We are currently on
 * **Victor Scurtu** - *Code Review and Refactor* - [23scurtu](https://github.com/23scurtu)
 * **Macauley Macdowell** - *Inventory UI* - [DoubleMac](https://github.com/DoubleMac)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
