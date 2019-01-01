@@ -20,6 +20,7 @@ import static android.support.v4.content.ContextCompat.startActivity;
 public class GameManager {
 
     private static Location currentLocation;
+    private static NPC activeNPC;
     private static List<Location> locations;
     private static int time = 0;
 
@@ -62,6 +63,14 @@ public class GameManager {
 
     public static Location getCurrentLocation() {
         return currentLocation;
+    }
+
+    public static NPC getActiveNPC(){
+        return activeNPC;
+    }
+
+    public static void setActiveNPC(NPC npc){
+        activeNPC=npc;
     }
 
     public static void setCurrentLocation(Location loc) {

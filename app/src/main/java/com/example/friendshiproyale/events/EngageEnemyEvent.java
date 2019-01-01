@@ -2,18 +2,14 @@ package com.example.friendshiproyale.events;
 
 import android.content.Context;
 
-import com.example.friendshiproyale.PlayerManager;
 import com.example.friendshiproyale.R;
 import com.example.friendshiproyale.Randomize;
 
-import java.util.Collections;
+public class EngageEnemyEvent extends GameEvent {
 
-public class DiscoverEnemyEvent extends GameEvent {
-
-    public DiscoverEnemyEvent(Context context){
+    public EngageEnemyEvent(Context context){
         super(context);
     }
-
 
     public int randomizeDialogue(){
         int number= Randomize.randomInt(1,3);

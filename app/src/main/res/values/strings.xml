@@ -24,6 +24,12 @@
     <string name="parley">Parley</string>
     <string name="hide">Hide</string>
     <string name="item">Item</string>
+
+    <string name="melee">Melee</string>
+    <string name="shoot">Shoot</string>
+    <string name="run">Run</string>
+
+
     <string name="title_activity_main2">Main2Activity</string>
 
 </resources>

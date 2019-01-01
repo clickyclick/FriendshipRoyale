@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.friendshiproyale.GameManager;
 import com.example.friendshiproyale.NPC;
 import com.example.friendshiproyale.R;
 import com.example.friendshiproyale.Randomize;
@@ -25,15 +26,15 @@ public class DiscoverEnemyActivity extends AppCompatActivity {
 
         discoverEnemyEvent = new DiscoverEnemyEvent(getApplicationContext());
         relatedNPC= Randomize.randomLiveNPC();
+        GameManager.setActiveNPC(relatedNPC);
 
         //set dialogue
         TextView diag= findViewById(R.id.diag);
-        diag.setText(getResources().getString(discoverEnemyEvent.randomizeDiaglogue(), relatedNPC.getName()));
+        diag.setText(getResources().getString(discoverEnemyEvent.randomizeDialogue(), relatedNPC.getName()));
     }
 
     public void attack (View view){
         Intent i= new Intent(this, EngageEnemyActivity.class);
-
 
         startActivity(i);
     }

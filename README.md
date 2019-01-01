@@ -31,8 +31,8 @@ Commits take the form vX.X/commit text based on the version. We are currently on
 
 ## License
 
-Not to be distributed or sold
-Copyright (c) 2018 Aidan Wilson**
+Not to be distributed or sold  
+Copyright (c) 2018 Aidan Wilson
 
 ## Acknowledgments
 
